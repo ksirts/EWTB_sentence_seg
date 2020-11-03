@@ -1,0 +1,10 @@
+## Estonian Web Treebank manually annotated with sentence and token boundaries
+
+This repository contains the Estonian Web Treebank (EWTB), available in [Universal Dependencies](https://universaldependencies.org) Collection. The EWTB was originally created by Muischnek, Müürisep and Särg (2019).
+
+The current version of the corpus has been manually annotated with both orthographic (O) and syntactic (S) sentence boundaries as well as token boundaries.
+* **Orthographic sentence boundaries** are marked after the common sentence-final punctuation marks (.!?), but also when the sentence-final punctuation mark is missing but the next word starts with a capital letter and the intention of starting a new sentence is clear.
+* **Syntactic* sentence boundaries** are marked in places that do not necessarily correspond to orthographic sentence boundary, such that the sentence still makes up a syntactically complete unit.
+* Finally, different from the original EWTB available in UD collection, the current version of the corpus also contains **aragraph boundaries** (P), which are always considered as sentence boundaries.
+
+The data is in the [CONLL-U format](https://universaldependencies.org/format.html), currently containing only word tokens themselves. The exact label of the sentence boundary is given in the `# label` header of each sentence. The number after each boundary label (O, S and P) denotes how many annotators labelled this type of boundary in that specific place. All annotated boundaries are majority boundaries obtained based on the labels of 3 or 5 annotators.
